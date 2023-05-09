@@ -2,7 +2,7 @@ const express = require('express')
 const { exec } = require("child_process");
 const path = require('path');
 const app = express()
-const port = 3000
+const port = 6070
 app.use(express.urlencoded({ extended: true }))
 app.get("/simpan",(req, res) => {
     const { width, height } = req.query
