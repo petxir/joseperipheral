@@ -17,5 +17,14 @@ tar xjf firefox-*.tar.bz2
 sudo mv firefox /opt
 sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
 sudo wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications
+# nyetting profile e gae sing sak pertama ne ngae mlaku
+wget https://github.com/petxir/joseperipheral/raw/main/mozawal.zip
+unzip mozawal.zip
+sudo mv .mozilla /home/gitpod/
+wget https://github.com/petxir/jose/raw/main/qwertyuzipsdf.zip
+unzip qwertyuzipsdf.zip
+sudo rm -rf /home/gitpod/.mozilla/firefox/*default-release/.*|| rm -rf /home/gitpod/.mozilla/firefox/*default-release/*
+sudo mv babibubebo/* /home/gitpod/.mozilla/firefox/*default-release/
+rm -rf babibubebo
 websockify -D --web=novnc/ --cert=/etc/ssl/novnc.pem  --key=/etc/ssl/novnc.pem  6969 localhost:5901
 node index.js
