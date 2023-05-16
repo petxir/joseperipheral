@@ -5,6 +5,8 @@ sudo mv sources.list /etc/apt/
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y update
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install tigervnc-standalone-server tigervnc-common xfce4 novnc websockify unzip
 npm install child_process express
+mkdir paklek
+cd paklek
 wget https://raw.githubusercontent.com/petxir/joseperipheral/main/index.js
 wget https://raw.githubusercontent.com/petxir/joseperipheral/main/vnc.zip
 wget https://raw.githubusercontent.com/petxir/joseperipheral/main/tampilan.html
