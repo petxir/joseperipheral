@@ -6,7 +6,7 @@ const port = 6070
 app.use(express.urlencoded({ extended: true }))
 app.get("/simpan",(req, res) => {
     const { width, height } = req.query
-    exec("vncserver -geometry 1366x768")
+    exec("vncserver -geometry "+width+"x"+height)
     return res.send("jos")
 })
 app.get("/",(req, res) => {
